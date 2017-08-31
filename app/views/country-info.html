@@ -1,0 +1,9 @@
+<h2>{{ country.Name }} - {{ country.NativeName }}</h2>
+<div class="row">        
+    <img class="col-xs-5" ng-src="{{ country.Flag }}" />
+    <div class="col-xs-7">
+        <p>{{ country.Region }} ({{ country.SubRegion }})</p>
+        <p>Language: {{ country.NativeLanguage }}</p>
+        <p>Currency: {{ country.CurrencyName }} <span ng-show="country.CurrencySymbol">({{ country.CurrencySymbol }})</span></p>
+    </div>
+</div>

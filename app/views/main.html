@@ -1,14 +1,6 @@
 <div class="jumbotron">
   <h1>Countries</h1>
-  <div ng-repeat="country in countries">
-    <h2>{{ country.Name }} - {{ country.NativeName }}</h2>
-    <p>{{ country.Region }} ( {{ country.SubRegion }})</p>
-    <div class="row">        
-      <img class="col-xs-5" ng-src="{{ country.FlagPng }}" />
-      <div class="col-xs-7">
-        <p>Language: {{ country.NativeLanguage }}</p>
-        <p>Currency: {{ country.CurrencyName }} <span ng-show="country.CurrencySymbol">({{ country.CurrencySymbol }})</span></p>
-      </div>
-    </div>
+  <div ng-repeat="country in countries">      
+    <country-info country="country"></country-info>
   </div>
 </div>

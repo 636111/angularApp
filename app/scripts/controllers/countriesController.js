@@ -6,13 +6,13 @@ angular
 
     $scope.status;
     $scope.countries;
-
+    
     getCountries();
     
     function getCountries() {
       countriesService.getCountries()
         .then(function(response){
-          $scope.countries =  response.data.Response;
+          $scope.countries = response.data.Response;
         }, function(error){
           $scope.status = 'Unable to load countries data: ' + error.message;
         });
@@ -24,5 +24,5 @@ angular
               return $scope.countries[i];
       }
     };
-    
+
   }]);
