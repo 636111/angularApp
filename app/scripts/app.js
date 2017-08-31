@@ -1,19 +1,13 @@
 'use strict';
 
-/**
- * @ngdoc overview
- * @name angularApp
- * @description
- * # angularApp
- *
- * Main module of the application.
- */
+//This configures the routes and associates each route with a view and a controller
 angular
   .module('angularApp', ['ngRoute'])
   .config(['$routeProvider', function($routeProvider){
     $routeProvider
       .when('/', {
-        templateUrl : '../views/main.html'
+        templateUrl : '../views/main.html',
+        controller : 'countriesController'
       })
       .when('/about', {
         templateUrl: '../views/about.html'
