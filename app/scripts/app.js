@@ -9,8 +9,9 @@ angular
         templateUrl : '../views/main.html',
         controller : 'countriesController'
       })
-      .when('/about', {
-        templateUrl: '../views/about.html'
+      .when('/detail/:id?', {
+        templateUrl: '../views/detail.html',
+        controller: 'detailController'
       })
       .when('/contact', {
         templateUrl: '../views/contact.html'
