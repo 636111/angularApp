@@ -56,4 +56,5 @@ angular
             $scope.selectPage($scope.currentPage+1);
         }
     };
+    
   }]);

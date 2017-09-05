@@ -1,6 +1,19 @@
 <div class="jumbotron">
+  <div class="pagination">
+    <li ng-class="{disabled: noPrevious()}"><a ng-href="{{previousId()}}"><</a></li>
+    <li ng-class="{disabled: noNext()}"><a ng-href="{{nextId()}}">></a></li>
+  </div>
   <p class="lead">
-    Detail page.
+    <h2>{{ detailCountry.Name }} - {{ detailCountry.NativeName }}</h2>
+    <div class="row">        
+        <img class="col-xs-12" ng-src="{{ detailCountry.Flag }}" />
+        <div class="col-xs-12"><br>
+            <p>{{ detailCountry.Region }} ({{ detailCountry.SubRegion }})</p>
+            <p>Language: {{ detailCountry.NativeLanguage }}</p>
+            <p>Currency: {{ detailCountry.CurrencyName }} <span ng-show="country.CurrencySymbol">({{ detailCountry.CurrencySymbol }})</span></p>
+            <p>More info (...)</p>
+        </div>
+    </div>
   </p>
 </div>
   

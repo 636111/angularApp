@@ -24,9 +24,6 @@ angular
         }, function(error){
           $scope.status = 'Unable to load countries data: ' + error.message;
         });
-      
-      //$scope.countries = countriesService.getCountries();
-      
     };
 
     $scope.getCountries();
