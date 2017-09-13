@@ -1,6 +1,6 @@
 <h2>{{ country.Name }} - {{ country.NativeName }}</h2>
 <div class="row">        
-    <img class="col-xs-5" ng-src="{{ country.Flag }}" />
+    <a ng-href="#!/detail/{{id}}"><img class="col-xs-5" ng-src="{{ country.Flag }}" /></a>
     <div class="col-xs-7">
         <p>{{ country.Region }} ({{ country.SubRegion }})</p>
         <p>Language: {{ country.NativeLanguage }}</p>

@@ -39,7 +39,7 @@
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
             <ul class="nav navbar-nav">
-              <li ng-repeat="item in menuItems" ng-class="{active : activeMenu === item}"><a ng-href="#!/{{ item }}" ng-click="setActive(item)">{{ item }}</a></li>
+              <li ng-repeat="item in menuItems" ng-class="{active : activeMenu === item}"><a ng-href="#!/{{ item.toLowerCase() }}" ng-click="setActive(item)">{{ item }}</a></li>
             </ul>
           </div>
         </div>

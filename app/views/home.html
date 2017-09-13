@@ -1,7 +1,7 @@
 <div class="jumbotron">
   <h1>Countries</h1>
   <div ng-repeat="country in data">      
-    <country-info country="country"></country-info>
+    <country-info country="country" id="{{$index}}"></country-info>
   </div>
   <pagination num-pages="noOfPages" current-page="currentPage" class="pagination-small"></pagination>
 </div>
